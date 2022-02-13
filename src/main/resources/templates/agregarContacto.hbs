@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/estilos.css">
+
+    <script
+            src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+            crossorigin="anonymous"></script>
+
+
+    <title>Patitas, Home</title>
+</head>
+
+<body>
+{{>navbar.hbs}}
+<div class="container mt-4 justify-content-center table-bordered rounded bg-secondary shadow-lg border-radius">
+    <div class="row">
+        <div class="col d-flex justify-content-center">
+            <h1 class="pt-4 mb-4">Contacto</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col d-flex justify-content-center">
+            <h5>Completa la informacion de cada contacto de emergencia.</h5>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col d-flex justify-content-center">
+        <h5>Este se va a utilizar si alguien encuentra tu mascota y lo quiere reportar.</h5>
+        </div>
+    </div>
+
+    <div class="row">
+        <form class="col-3"></form>
+
+        <form class="col-6 m-4" action="/agregar-contacto/{{persona.id}}" method="post">
+
+            <div class="form-group row my-1">
+                <div class="col-2">
+                    <label for="text" class="col-form-label">Nombre</label>
+                </div>
+                <div class="col">
+                    <div class="input-group">
+
+                        <input id="text" name="inputNombre" type="text" required="required" class="form-control rounded" pattern="[A-Za-z]+">
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group row my-1">
+                <div class="col-2">
+                    <label for="text" class="col-form-label">Apellido</label>
+                </div>
+                <div class="col">
+                    <div class="input-group">
+                        <input id="text" name="inputApellido" type="text" required="required" class="form-control rounded" pattern="[A-Za-z]+">
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group row my-1">
+                <div class="col-2">
+                    <label for="text" class="col-form-label">Email</label>
+                </div>
+                <div class="col">
+                    <div class="input-group">
+                        <input id="text" name="inputEmail" type="email" required="required" class="form-control rounded">
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group row my-1">
+                <div class="col-2">
+                    <label for="text" class="col-form-label">Telefono</label>
+                </div>
+                <div class="col">
+                    <div class="input-group">
+                        <input id="text" name="inputTelefono" type="tel" required="required" class="form-control rounded">
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <div class="col d-flex justify-content-around">
+                    <button name="submit" type="submit" class="btn btn-primary px-5 my-4 rounded-pill">Guardar este contacto.</button>
+                    <a href=../><button name="returnHome" type="button" class="btn btn-primary px-5 my-4 rounded-pill">Volver al Home</button></a>
+
+                </div>
+            </div>
+        </form>
+
+        <form class="col-3 m-4"></form>
+    </div>
+</div>
+<script src="libs/bootstrap/dist/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
