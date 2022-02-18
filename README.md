@@ -3,13 +3,11 @@
 
 ## **Trabajo practico para Diseño de sistemas**
 
-[wireframe entrega 1](https://drive.google.com/drive/u/0/folders/1sS7vtZ0IF7yYWDP2bHMV7URM0AXAM42r)  
-
 [Decisiones de diseño](https://docs.google.com/document/d/1tiVJ2-eRE2DF3YTbqpE26BZDL5_okTDb/edit)
 
 [Diagrama de clases](https://drive.google.com/file/d/1G_D2Ed6DilnLKMjwqUsi7WlB1QpMoF2P/view?usp=sharing)
 
-[Diseño de vistas](https://drive.google.com/file/d/1R03mMJLkCljX5l1AUw9fpTqZxu-1tPZ0/view?usp=sharing)
+[Diseño de vistas inicial](https://drive.google.com/file/d/1R03mMJLkCljX5l1AUw9fpTqZxu-1tPZ0/view?usp=sharing)
 
 [DER](https://drive.google.com/file/d/1jlfF6P2ODCd2pBAGG6T2KfC9qZhZmL1R/view?usp=sharing)
 
@@ -34,4 +32,3 @@ Variables de entorno:
 - SERVICE_SID=XXX
 - MAILTRAP_USERNAME
 - MAILTRAP_PASSWORD
-- 
